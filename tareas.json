@@ -1,0 +1,14 @@
+[
+    {
+        "genero" : "Vallenato",
+        "estado" : "Terminada"
+    },
+    {
+        "genero" : "Elecronica",
+        "estado" : "Progreso"
+    },
+    {
+        "genero" : "Pop",
+        "estado" : "Pendiente"
+    }
+]
