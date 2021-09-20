@@ -1,14 +1,14 @@
 [
     {
-        "genero" : "Vallenato",
-        "estado" : "Terminada"
+        "Genero": "Vallenato",
+        "Estado": "Terminada"
     },
     {
-        "genero" : "Elecronica",
-        "estado" : "Progreso"
+        "Genero": "Elecronica",
+        "Estado": "Progreso"
     },
     {
-        "genero" : "Pop",
-        "estado" : "Pendiente"
+        "Genero": "Pop",
+        "Estado": "Pendiente"
     }
 ]
