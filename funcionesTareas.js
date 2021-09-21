@@ -2,6 +2,8 @@ const fs = require ("fs")
 const tareas = require("./tareas.json")
 
 
+
+
 //crea y agrega una nueva tarea
 const crearTarea = genero => {
     const nuevaTarea = {
@@ -15,15 +17,21 @@ const crearTarea = genero => {
 const guardarTarea = nuevaTarea => {
     const listaTareas = tareas
     listaTareas.push(nuevaTarea)
-    console.log(listaTareas) 
     escribirJson(listaTareas)
 }
 
 //Nos convierte el array de objetos literales en formato Json y nos escribe en el archivo tareas.Json 
-const escribirJson = (listaTarea)=>{
+const escribirJson = (listaTareas)=>{
     const listaTJson = JSON.stringify(listaTareas,null,4)
   fs.writeFileSync("./tareas.json",listaTJson)
 }
 
+//Nos filtra  el array según el estado y nos muestra los elementos que ci¿umplan con el requerimiento.
+const filtrarPorEstado = (estado)=>{
+    const listaTareas = tareas
+    return console.log(listaTareas.filter(item =>item.Estado == estado))
+}
 
-module.exports = {crearTarea}
+  
+
+module.exports = {crearTarea, filtrarPorEstado }
