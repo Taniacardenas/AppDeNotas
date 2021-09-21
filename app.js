@@ -14,7 +14,10 @@ switch (opciones) {
     case "crear":
         logic.crearTarea(genero)
         break;
-
+    case "filtrar":
+        const estado = genero
+        logic.filtrarPorEstado(estado)
+        break;
     case undefined:
         console.log("Atención - Tienes que pasar una acción")
         break;
